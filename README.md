@@ -7,3 +7,8 @@ O projeto visa criar um formulário de cadastro de endereço intuitivo e eficien
 ## Limpar consulta do form já realizada
 
 <img src= "l.png">
+
+### const limparFormulario = () =>
+usando a sintaxe de arrow function. Essa função não recebe parâmetros.
+
+###
