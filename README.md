@@ -17,4 +17,5 @@ usando a sintaxe de arrow function. Essa função não recebe parâmetros.
 ### document.getElementById('Estado').value = '';
 o elemento HTML com o ID Rua e define seu valor (value) como uma string vazia (''). Isso limpa o campo de entrada correspondente.
 
-### 
+## Verrifica se o CEP é valido e Verifica o tamanho do CEP
+
