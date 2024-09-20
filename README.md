@@ -6,3 +6,4 @@ O projeto visa criar um formulário de cadastro de endereço intuitivo e eficien
 
 ## Limpar consulta do form já realizada
 
+<img src= "l.png">
