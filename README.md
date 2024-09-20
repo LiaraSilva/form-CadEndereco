@@ -11,4 +11,10 @@ O projeto visa criar um formulário de cadastro de endereço intuitivo e eficien
 ### const limparFormulario = () =>
 usando a sintaxe de arrow function. Essa função não recebe parâmetros.
 
-###
+###  document.getElementById('Rua').value = '';
+### document.getElementById('Bairro').value = '';
+### document.getElementById('Cidade').value = '';
+### document.getElementById('Estado').value = '';
+o elemento HTML com o ID Rua e define seu valor (value) como uma string vazia (''). Isso limpa o campo de entrada correspondente.
+
+### 
