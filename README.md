@@ -16,3 +16,4 @@ o elemento HTML com o ID Rua e define seu valor (value) como uma string vazia ('
 
 ## Verrifica se o CEP é valido e Verifica o tamanho do CEP
 
+<img src= "i.png">
