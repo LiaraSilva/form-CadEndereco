@@ -17,3 +17,11 @@ o elemento HTML com o ID Rua e define seu valor (value) como uma string vazia ('
 ## Verrifica se o CEP é valido e Verifica o tamanho do CEP
 
 <img src= "i.png">
+
+## const eNumero = (numero) => /^[0-9]+$/.test(numero);
+### const: 
+Declara uma constante, ou seja, uma variável cujo valor não pode ser alterado após sua inicialização.
+### eNumero: 
+É o nome escolhido para essa constante. Você pode escolher qualquer nome válido para uma variável.
+### (numero) =>:
+Essa parte define uma função arrow function. Uma arrow function é uma forma mais concisa de escrever funções em JavaScript.
