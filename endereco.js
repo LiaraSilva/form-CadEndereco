@@ -5,10 +5,10 @@
 
 // Limpar consulta do form já realizada
 const limparFormulario = () =>{
-    document.getElementById('Rua').value = '';
+    document.getElementById('Logradouro').value = '';
     document.getElementById('Bairro').value = '';
-    document.getElementById('Cidade').value = '';
-    document.getElementById('Estado').value = '';
+    document.getElementById('Localidade').value = '';
+    document.getElementById('Uf').value = '';
 }
 
 // Verrifica se o CEP é valido
@@ -40,6 +40,9 @@ const pesquisaCep = async() =>{
             }
 
     }else{
-
+        alert('CEP incorreto');
     }
 }
+
+// Execulta a ação de preenchimento de formulário ao deixar o campo do CEP
+document.getElementById('CEP').addEventListener('focusout', pesquisarCep);
