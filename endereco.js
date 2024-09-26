@@ -26,3 +26,12 @@ const preencherformulario = (endereco) =>{
 }
 
 // Função para consumo de API ViaCEP
+const pesquisaCep = async() =>{
+    limparFormulario
+    const url = `http://viacep.com.br/ws/${cep.value}/json/`;
+    if(cepValido(cep.value)){
+        const dados = await fetch(url);
+    }else{
+
+    }
+}
