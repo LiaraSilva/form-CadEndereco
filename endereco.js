@@ -17,7 +17,7 @@ const eNumero = (numero) => /^[0-9]+$/.test(numero);
 const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 
 // Função para preencher campos relacionados ao CEP
-const preencherformulario = (endereco) =>{
+const preencherformulario = (addres) =>{
     document.getElementById('logradouro').value = endereco.logradouro;
 // Coloca o valor de legradouro de API dentro do campo logradouro de formulário
     document.getElementById('bairro').value = endereco.bairro;
@@ -31,6 +31,14 @@ const pesquisaCep = async() =>{
     const url = `http://viacep.com.br/ws/${cep.value}/json/`;
     if(cepValido(cep.value)){
         const dados = await fetch(url);
+        const addres = await dados.json();
+
+        if(addres.hasOwnProperty('erro')){
+            alert('CEP não encontrado');
+            }else{
+                preencherformulario(addres)
+            }
+
     }else{
 
     }
