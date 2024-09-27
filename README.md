@@ -38,3 +38,9 @@ Define uma constante, ou seja, uma variável cujo valor não pode ser alterado a
 Define um parâmetro da função, que representa o valor do CEP que queremos validar.
 * =>:
 Indica que estamos definindo uma função arrow function, uma forma mais concisa de escrever funções em JavaScript.
+* cep.length == 8: 
+Verifica se o comprimento da string cep é igual a 8. Um CEP válido no Brasil possui exatamente 8 dígitos.
+* &&: 
+É o operador lógico "e". Significa que ambas as condições à esquerda e à direita do operador devem ser verdadeiras para que o resultado final seja verdadeiro.
+* eNumero(cep): 
+Chama a função eNumero (que você já definiu anteriormente) passando o valor do CEP como argumento. Essa função, como você explicou, verifica se todos os caracteres do CEP são números
