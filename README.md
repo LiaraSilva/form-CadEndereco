@@ -9,19 +9,25 @@ O projeto visa criar um formulário de cadastro de endereço intuitivo e eficien
 <img src= "l.png">
 
 ### const limparFormulario = () =>
-usando a sintaxe de arrow function. Essa função não recebe parâmetros.
+* usando a sintaxe de arrow function. Essa função não recebe parâmetros.
 
 ###  document.getElementById('Rua').value = '';document.getElementById('Bairro').value = '';document.getElementById('Cidade').value = '';document.getElementById('Estado').value = '';
-o elemento HTML com o ID Rua e define seu valor (value) como uma string vazia (''). Isso limpa o campo de entrada correspondente.
+* o elemento HTML com o ID Rua e define seu valor (value) como uma string vazia (''). Isso limpa o campo de entrada correspondente.
 
 ## Verrifica se o CEP é valido e Verifica o tamanho do CEP
 
 <img src= "i.png">
 
 ## const eNumero = (numero) => /^[0-9]+$/.test(numero);
-### const: 
+* const: 
 Declara uma constante, ou seja, uma variável cujo valor não pode ser alterado após sua inicialização.
-### eNumero: 
+* eNumero: 
 É o nome escolhido para essa constante. Você pode escolher qualquer nome válido para uma variável.
-### (numero) =>:
+* (numero) =>:
 Essa parte define uma função arrow function. Uma arrow function é uma forma mais concisa de escrever funções em JavaScript.
+* /^\[0-9\]+$/: 
+É uma expressão regular (regex). Expressões regulares são padrões que podem ser usados para encontrar correspondências em strings.
+* .test(numero): É um método do objeto RegExp (expressão regular) que verifica se a string passada como argumento corresponde à expressão regular. Retorna true se houver correspondência e false caso contrário.
+
+## const cepValido = (cep) => cep.length == 8 && eNumero(cep);
+* 
