@@ -30,4 +30,11 @@ Essa parte define uma função arrow function. Uma arrow function é uma forma m
 * .test(numero): É um método do objeto RegExp (expressão regular) que verifica se a string passada como argumento corresponde à expressão regular. Retorna true se houver correspondência e false caso contrário.
 
 ## const cepValido = (cep) => cep.length == 8 && eNumero(cep);
-* 
+* const: 
+Define uma constante, ou seja, uma variável cujo valor não pode ser alterado após sua inicialização.
+* cepValido:
+É o nome dado a essa constante, escolhido para representar a função que verifica a validade de um CEP.
+* cep:
+Define um parâmetro da função, que representa o valor do CEP que queremos validar.
+* =>:
+Indica que estamos definindo uma função arrow function, uma forma mais concisa de escrever funções em JavaScript.
