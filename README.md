@@ -49,7 +49,7 @@ Chama a função eNumero (que você já definiu anteriormente) passando o valor 
 
 <img src= "a.png">
 
-### const preencherformulario = (addres) => document.getElementById('logradouro').value = endereco.logradouro;
+### const preencherformulario = (addres) =>
 
 * const preencherFormulario =:
 * const: Declara uma constante, ou seja, uma variável cujo valor não pode ser alterado após sua inicialização.
@@ -66,3 +66,7 @@ Chama a função eNumero (que você já definiu anteriormente) passando o valor 
 * .value = endereco.logradouro;:
 * .value: Essa propriedade define ou retorna o valor de um elemento de formulário.
 * endereco.logradouro: Acessamos a propriedade logradouro do objeto endereco. Essa propriedade contém o valor do logradouro (rua) que será atribuído ao campo de input.
+
+### // Função para consumo de API ViaCEP
+
+<img src= "r.png">
