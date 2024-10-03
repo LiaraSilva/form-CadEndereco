@@ -120,3 +120,7 @@ Chama a função eNumero (que você já definiu anteriormente) passando o valor 
 * .addEventListener: É um método que adiciona um ouvinte de eventos a um elemento HTML.
 * 'focusout': Especifica o tipo de evento que está sendo escutado. "focusout" significa que o evento será disparado quando o foco sai do elemento.
 * pesquisaCep: É o nome da função que será executada quando o evento "focusout" ocorrer.
+
+# Resultado
+
+<img src= "d.png">
