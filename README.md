@@ -48,3 +48,21 @@ Chama a função eNumero (que você já definiu anteriormente) passando o valor 
 ## Função para preencher campos relacionados ao CEP e Coloca o valor de legradouro de API dentro do campo logradouro de formulário
 
 <img src= "a.png">
+
+### const preencherformulario = (addres) => document.getElementById('logradouro').value = endereco.logradouro;
+
+* const preencherFormulario =:
+* const: Declara uma constante, ou seja, uma variável cujo valor não pode ser alterado após sua inicialização.
+* preencherFormulario: É o nome dado à função. Esse nome é utilizado para chamar a função posteriormente.
+* =: O sinal de igual é usado para atribuir um valor à constante.
+* (): Os parênteses indicam que estamos definindo uma função.
+* (endereco): Dentro dos parênteses, temos o parâmetro endereco. Esse parâmetro é um objeto que contém as informações do endereço a ser preenchido no formulário.>
+
+### document.getElementById('logradouro').value = endereco.logradouro;
+
+* document.getElementById('logradouro'):
+* document: Representa o documento HTML completo.
+* getElementById('logradouro'): É um método do objeto document que busca um elemento HTML pelo seu ID. No caso, estamos procurando um elemento com o ID logradouro. Esse elemento provavelmente é um campo de input (como um campo de texto) onde será exibido o logradouro.
+* .value = endereco.logradouro;:
+* .value: Essa propriedade define ou retorna o valor de um elemento de formulário.
+* endereco.logradouro: Acessamos a propriedade logradouro do objeto endereco. Essa propriedade contém o valor do logradouro (rua) que será atribuído ao campo de input.
