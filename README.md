@@ -70,3 +70,11 @@ Chama a função eNumero (que você já definiu anteriormente) passando o valor 
 ### // Função para consumo de API ViaCEP
 
 <img src= "r.png">
+
+### const pesquisaCep = async() => 
+
+* const: Define uma constante, ou seja, uma variável cujo valor não pode ser alterado após sua inicialização.
+* pesquisaCep: É o nome da função que estamos definindo. Ela será responsável por realizar a pesquisa do CEP.
+* async: Indica que essa função é assíncrona, ou seja, ela pode realizar operações que levam tempo, como a requisição à API, sem bloquear a execução do restante do código.
+
+* limparFormulario(); Chama uma função (não mostrada no código) chamada limparFormulario. Essa função provavelmente limpa todos os campos de um formulário HTML, preparando-o para uma nova pesquisa.
