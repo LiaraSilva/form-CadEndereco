@@ -83,3 +83,25 @@ Chama a função eNumero (que você já definiu anteriormente) passando o valor 
 
 * const url: Cria uma constante para armazenar a URL da API que será utilizada para buscar as informações do CEP.
 * https://viacep.com.br/ws/${cep.value}/json/: É a URL da API do ViaCEP, onde o {cep.value} será substituído pelo valor do CEP digitado pelo usuário. Essa URL é formatada para realizar uma consulta específica para o CEP informado.
+
+### if(cepValido(cep.value))
+
+* if: Inicia uma estrutura condicional. Se a condição dentro dos parênteses for verdadeira, o código dentro das chaves será executado.
+* cepValido(cep.value): Chama uma função (não mostrada no código) chamada cepValido para verificar se o CEP digitado pelo usuário é válido. Essa função provavelmente verifica se o CEP tem o formato correto (8 dígitos numéricos).
+
+### const dados = await fetch(url);
+
+* const dados: Cria uma constante para armazenar os dados retornados pela API.
+* await fetch(url): Realiza uma requisição à URL construída anteriormente usando a função fetch. O await faz com que a execução da função pause até que a requisição seja concluída, garantindo que os dados estejam disponíveis antes de continuar.
+
+### const addres = await dados.json();
+
+* const addres: Cria uma constante para armazenar os dados da resposta da API convertidos para um formato JSON (JavaScript Object Notation).
+* await dados.json(): Converte os dados recebidos da API, que estão em formato textual, para um objeto JavaScript, facilitando o acesso às informações do endereço.
+* if(addres.hasOwnProperty('erro')): Verifica se o objeto addres possui uma propriedade chamada 'erro'. Se essa propriedade existir, significa que o CEP não foi encontrado.
+* alert('CEP não encontrado'): Exibe uma mensagem de alerta para o usuário informando que o CEP não foi encontrado.
+
+### else
+* Caso o CEP tenha sido encontrado, o código dentro deste bloco será executado.
+### preencherFormulario(addres)
+* Chama a função preencherFormulario (não mostrada no código) para preencher os campos do formulário com as informações do endereço contidas no objeto addres.
