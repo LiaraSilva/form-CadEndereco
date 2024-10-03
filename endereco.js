@@ -17,18 +17,18 @@ const eNumero = (numero) => /^[0-9]+$/.test(numero);
 const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 
 // Função para preencher campos relacionados ao CEP
-const preencherformulario = (addres) =>{
-    document.getElementById('logradouro').value = endereco.logradouro;
+const preencherformulario = (endereco) =>{
+    document.getElementById('Logradouro').value = endereco.logradouro;
 // Coloca o valor de legradouro de API dentro do campo logradouro de formulário
-    document.getElementById('bairro').value = endereco.bairro;
-    document.getElementById('localidade').value = endereco.localidade;
-    document.getElementById('uf').value = endereco.uf;
+    document.getElementById('Bairro').value = endereco.bairro;
+    document.getElementById('Localidade').value = endereco.localidade;
+    document.getElementById('Uf').value = endereco.uf;
 }
 
 // Função para consumo de API ViaCEP
 const pesquisaCep = async() =>{
-    limparFormulario
-    const url = `http://viacep.com.br/ws/${cep.value}/json/`;
+    limparFormulario();
+    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
     if(cepValido(cep.value)){
         const dados = await fetch(url);
         const addres = await dados.json();
@@ -45,4 +45,4 @@ const pesquisaCep = async() =>{
 }
 
 // Execulta a ação de preenchimento de formulário ao deixar o campo do CEP
-document.getElementById('CEP').addEventListener('focusout', pesquisarCep);
+document.getElementById('cep').addEventListener('focusout', pesquisaCep);
