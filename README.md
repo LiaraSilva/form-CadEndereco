@@ -78,3 +78,8 @@ Chama a função eNumero (que você já definiu anteriormente) passando o valor 
 * async: Indica que essa função é assíncrona, ou seja, ela pode realizar operações que levam tempo, como a requisição à API, sem bloquear a execução do restante do código.
 
 * limparFormulario(); Chama uma função (não mostrada no código) chamada limparFormulario. Essa função provavelmente limpa todos os campos de um formulário HTML, preparando-o para uma nova pesquisa.
+
+### const url =https://viacep.com.br/ws/${cep.value}/json/;
+
+* const url: Cria uma constante para armazenar a URL da API que será utilizada para buscar as informações do CEP.
+* https://viacep.com.br/ws/${cep.value}/json/: É a URL da API do ViaCEP, onde o {cep.value} será substituído pelo valor do CEP digitado pelo usuário. Essa URL é formatada para realizar uma consulta específica para o CEP informado.
