@@ -105,3 +105,18 @@ Chama a função eNumero (que você já definiu anteriormente) passando o valor 
 * Caso o CEP tenha sido encontrado, o código dentro deste bloco será executado.
 ### preencherFormulario(addres)
 * Chama a função preencherFormulario (não mostrada no código) para preencher os campos do formulário com as informações do endereço contidas no objeto addres.
+
+## Execulta a ação de preenchimento de formulário ao deixar o campo do CEP
+
+<img src= "k.png">
+
+### document.getElementById('cep'):
+
+* document: Representa o documento HTML completo.
+* getElementById('cep'): Busca um elemento HTML pelo seu ID. Neste caso, está procurando o elemento com o ID "cep". Provavelmente, esse elemento é um campo de entrada (input) onde o usuário digita o CEP.
+
+### .addEventListener('focusout', pesquisaCep):
+
+* .addEventListener: É um método que adiciona um ouvinte de eventos a um elemento HTML.
+* 'focusout': Especifica o tipo de evento que está sendo escutado. "focusout" significa que o evento será disparado quando o foco sai do elemento.
+* pesquisaCep: É o nome da função que será executada quando o evento "focusout" ocorrer.
